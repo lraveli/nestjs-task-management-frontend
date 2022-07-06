@@ -1,0 +1,36 @@
+{
+  "name": "next-task-management",
+  "version": "1.0.0",
+  "description": "alternate frontend for Udemy \"NestJS Zero to Hero\" by Ariel Weinberger",
+  "author": "Collin Monahan <llaenowyd@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "dev": "next -p 3001",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "cors": "^2.8.5",
+    "heroku": "^7.60.2",
+    "mobx": "^6.3.2",
+    "mobx-react": "^7.2.0",
+    "mobx-react-lite": "^3.2.0",
+    "mobx-state-tree": "^5.0.1",
+    "next": "latest",
+    "query-string": "^7.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "styled-components": "^5.3.0",
+    "typescript": "4.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@types/node": "^14.0.23",
+    "@types/react": "^16.4.12",
+    "babel-plugin-styled-components": "^1.12.0",
+    "prettier": "^2.3.0"
+  }
+}
