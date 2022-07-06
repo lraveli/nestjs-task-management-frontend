@@ -20,8 +20,9 @@ jobs:
           REACT_APP_HOST_URL: ${{ secrets.REACT_APP_HOST_URL }}
           PUBLIC_URL: ${{ secrets.PUBLIC_URL }}
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./next
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: out
