@@ -2,10 +2,7 @@ import { drainContent } from './util';
 
 const apiEndpoint = '/api/signin';
 
-const signIn = async (username, password) => {
-  console.log('test');
-  console.log(`BASE: ${process.env.REACT_APP_BASE_URL}`);
-  console.log(`HOST: ${process.env.REACT_APP_HOST_URL}`);
+const signIn = async (username, password) => { 
   const res = await fetch(apiEndpoint, {
     headers: {
       ['Content-Type']: 'application/json',

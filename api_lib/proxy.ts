@@ -1,10 +1,15 @@
 import qs from 'query-string';
 import runCorsMiddleware from './runCorsMiddleware';
 
-const apiUrl = process.env.REACT_APP_BASE_URL;
-const apiHost = process.env.REACT_APP_HOST_URL;
+const apiUrl = process.env.API_URL;
+const apiHost = process.env.API_HOST;
 
 const proxy = async (endpoint, req, res) => {
+  console.log('test');
+  console.log(`BASE: ${process.env.API_URL}`);
+  console.log(`HOST: ${process.env.API_HOST}`);
+  console.log(process.env);
+  
   await runCorsMiddleware(req, res);
 
   let search = '';
