@@ -5,8 +5,6 @@ const apiUrl = process.env.REACT_APP_BASE_URL;
 const apiHost = process.env.REACT_APP_HOST_URL;
 
 const proxy = async (endpoint, req, res) => {
-  console.log(process.env.REACT_APP_BASE_URL);
-  console.log(process.env.REACT_APP_HOST_URL);
   await runCorsMiddleware(req, res);
 
   let search = '';
